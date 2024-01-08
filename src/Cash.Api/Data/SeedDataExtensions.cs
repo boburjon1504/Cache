@@ -1,9 +1,9 @@
-﻿    using Bogus;
+﻿using Bogus;
 using Cash.Domain.Entity;
 using Cash.Persistance.DataContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cash.Api.Data;
+namespace Cache.Api.Data;
 
 public static class SeedDataExtensions
 {
@@ -11,7 +11,7 @@ public static class SeedDataExtensions
     {
         var identityDbContext = serviceProvider.GetRequiredService<IdentityDbContext>();
 
-        if (!await identityDbContext.Users.AnyAsync())
+        if(!await identityDbContext.Users.AnyAsync())
             await identityDbContext.SeedUsersAsync();
     }
 

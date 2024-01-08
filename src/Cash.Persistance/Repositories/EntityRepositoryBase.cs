@@ -1,15 +1,10 @@
 ﻿using Cash.Domain.Common.Caching;
 using Cash.Domain.Common.Entities;
 using Cash.Domain.Common.Quering;
+using Cash.Domain.Extension;
 using Cash.Persistance.Caching.Broker;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using Cash.Domain.Extension;
 
 namespace Cash.Persistance.Repositories;
 public class EntityRepositoryBase<TEntity, TContext>(
